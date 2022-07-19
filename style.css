@@ -1,0 +1,84 @@
+:root{
+    --primary_color:#3B185E;
+    --secondary_color:#663A99;
+    --tertiary_color:#B297D1;
+    --button_color:#614080;
+    --background_color:#B297D1;
+    --font_color:#fff;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    background-color: var(--background_color);
+}
+/* top banner css start*/
+.container{
+    width:1200px;  
+    padding: 50px;
+    margin:0 auto ;
+    margin-bottom: 80px;
+    
+}
+
+.top-banner{
+   
+    height: 70vh;
+    background-color: var(--primary_color);
+    display: flex;
+    border-radius: 13px;
+   
+}
+.top-banner .content{
+    width: 50%;
+    padding: 80px 24px 80px 106px;
+    color:var(--font_color);
+}
+.heading{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 65px;
+    font-family: 'Montserrat', sans-serif;
+}
+.description{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+.top-btn{
+    padding: 15px 25px;
+    background-color: var(--button_color);    
+    border: none;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.top-btn a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font_color);
+}
+.fa-arrow-right{
+    font-size: 14px;
+    color: var(--font_color);
+    padding-left: 10px;
+}
+
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 85%;
+    padding-left: 80px;
+    padding-top: 33px;
+    
+}
+/* top banner css end*/
