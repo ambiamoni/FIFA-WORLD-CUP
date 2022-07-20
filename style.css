@@ -15,25 +15,25 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-main{
+body{
     background-color: var(--background_color);
 }
 /* top banner css start*/
 .container{
-    width:1200px;  
-    padding: 50px 50px 0 50px;
-    margin:0 auto ;
-    
+    width:85%; 
+    margin-bottom: 10px;      
     
 }
-
-.top-banner{
-   
-    height: 70vh;
+.bg{
     background-color: var(--primary_color);
-    display: flex;
+    margin:50px;
+    margin:100px auto ;
     border-radius: 13px;
-   
+
+}
+.top-banner{   
+   display: flex;
+
 }
 .top-banner .content{
     width: 50%;
@@ -41,17 +41,18 @@ main{
     color:var(--white_color);
 }
 .heading{
-    font-size: 60px;
+    font-size: 4.2em;
     font-weight: 700;
-    line-height: 65px;
+    line-height: 1em;    
     font-family: 'Montserrat', sans-serif;
 }
 .description{
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 24px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
+    margin-top: 20px;
 }
 .top-btn{
     padding: 15px 25px;
@@ -60,46 +61,64 @@ main{
     border-radius: 7px;
     display: inline-block;
     margin-top: 20px;
-}
-.top-btn a{
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     color: var(--white_color);
+    transition: ease 0.5s;
 }
+
+.top-btn:hover{
+    background-color: var(--white_color);
+    color: var(--black_color);
+}
+
+
 .fa-arrow-right{
     font-size: 14px;
     color: var(--white_color);
     padding-left: 10px;
+    transition: 0.1
+    3s;
+}
+.top-btn:hover .fa-arrow-right{
+    color:var(--black_color)
 }
 
 .banner-img{
     width: 50%;
+    
 }
 .banner-img img{
-    width: 85%;
+    width: 87%;    
     padding-left: 80px;
     padding-top: 33px;
     
 }
-/* top banner css end*/
 
+/* top banner css end*/
+.match{
+    margin:0 auto;
+}
 .match-info{
     display:flex;
-    padding: 20px;
+    /* padding: 40px; */
 }
-.upcoming-part{
-    width: 20%;
-    height: 33vh; 
+.side-part{
+    padding:12px;
+    width: 22%;
+    height: 40vh; 
     background-color: var(--primary_color);
     margin-right: 15px; 
-    padding-top: 18px; 
-    border-radius: 7px; 
+    padding-top: 20px; 
+    border-radius: 7px;
 }
+
 .upcoming{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    
 }
 
 
@@ -108,7 +127,7 @@ main{
     background-color: var(--white_color);
     border-radius: 7px;
     border:none;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -131,15 +150,22 @@ main{
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:15px;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
   
 }
 .single-card{
     box-shadow: 1px 1px 1px #bd9ee0;
     border-radius: 5px;
+    padding:10px;
     
 }
-.images img{
+.single-card:hover{
+   border:2px solid var(--primary_color);
+    
+}
+.single-card-images img{
     width:100%;
 }
 .transfer{
@@ -166,7 +192,7 @@ span{
 }
 /* footer css start */
 footer{
-    background-color: var(--black_color);
+    background-color: var(--primary_color);
     color: var(--white_color);    
     height: 300px;
     display: flex;
@@ -183,11 +209,39 @@ footer{
 .horizontal-line{
     width: 80%;
     margin: 20px auto ;
-    border-color: #333;
+    border-color: rgb(126, 124, 124);
 
 }
 .contact{
     display: flex;
     gap: 30px;
     margin-top: 20px;
+}
+/* matches page css */
+h3{
+    font-size: 18px;
+}
+/* responsive for tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+body{
+    background-color: aliceblue;
+}
+}
+
+
+
+/* responsive for mobile */
+@media only screen and (max-width: 767px) {
+    .top-banner{
+        font-display: flex;
+        flex-direction: column;
+    }
+  .top-banner .content{
+    width: 100%;
+  }
+  .banner-img{
+    width: 100%;    
+    
+    
+}
 }
