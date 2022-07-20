@@ -113,10 +113,10 @@ body {
 }
 
 .button {
-  padding: 15px 20px;
+  padding: 20px ;
   background-color: var(--white_color);
   border-radius: 7px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
